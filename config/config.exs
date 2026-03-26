@@ -6,4 +6,4 @@ config :git_ops,
   github_handle_lookup?: false,
   version_tag_prefix: "v",
   manage_mix_version?: true,
-  manage_readme_version: false
+  manage_readme_version: true
