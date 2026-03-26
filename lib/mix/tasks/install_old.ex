@@ -1,4 +1,4 @@
-defmodule Mix.Tasks.CommitHook.Install do
+defmodule Mix.Tasks.CommitHook.InstallOld do
   use Mix.Task
 
   @moduledoc false
