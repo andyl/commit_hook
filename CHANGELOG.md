@@ -5,6 +5,19 @@ See [Conventional Commits](Https://conventionalcommits.org) for commit guideline
 
 <!-- changelog -->
 
+## v0.3.0 (2026-03-26)
+
+
+
+
+### Features:
+
+* enable install behavior in the enable task by andyl
+
+### Bug Fixes:
+
+* correct task reference by andyl
+
 ## v0.2.0 (2026-03-26)
 
 
