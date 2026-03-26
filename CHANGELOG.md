@@ -5,6 +5,19 @@ See [Conventional Commits](Https://conventionalcommits.org) for commit guideline
 
 <!-- changelog -->
 
+## v0.4.0 (2026-03-26)
+
+
+
+
+### Features:
+
+* remove install task by andyl
+
+### Bug Fixes:
+
+* load only in dev by andyl
+
 ## v0.3.0 (2026-03-26)
 
 
