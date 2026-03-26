@@ -1,7 +1,5 @@
 defmodule CommitHook do
-  @moduledoc """
-  Documentation for `CommitHook`.
-  """
+  @moduledoc false
 
   @doc """
   Hello world.

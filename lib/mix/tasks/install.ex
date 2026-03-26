@@ -1,6 +1,7 @@
 defmodule Mix.Tasks.CommitHook.Install do
   use Mix.Task
 
+  @moduledoc false
   @shortdoc false
 
   @impl Mix.Task
