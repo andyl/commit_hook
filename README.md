@@ -43,10 +43,10 @@ Once installed, you can enable/disable the commit hook:
 
 ## Cloning Your Repo 
 
-Every developer who clones the your repo will have to explicitly enable the
-commit hook locally.  Your commit hook settings can not be saved in your repo.
-This is an intentional design of the Git Hook system, intended to address
-security risks.
+Every developer who clones your repo will have to explicitly install the commit
+hook locally.  Your commit hook settings can not be saved in your repo. This is
+an intentional design of the Git Hook system, intended to address security
+risks.
 
 You may wish to add a note for developers in your README file:
 
