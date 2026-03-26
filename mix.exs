@@ -9,6 +9,17 @@ defmodule CommitHook.MixProject do
       version: @version,
       elixir: "~> 1.19",
       start_permanent: Mix.env() == :prod,
+      description: "Enable/Disable Conventional Commit checks",
+      package: [
+      name: "commit_hook",      # Optional: defaults to app name
+      licenses: ["MIT"],       # Or MIT, etc.
+      links: %{
+        "GitHub" => "https://github.com/andyl/commit_hook",
+        "Docs" => "https://hexdocs.pm/commit_hook"
+      },
+      files: ~w(lib mix.exs README.md LICENSE CHANGELOG.md)  # Important: list files to include
+    ],
+
       deps: deps()
     ]
   end
