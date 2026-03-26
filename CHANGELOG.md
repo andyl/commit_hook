@@ -5,6 +5,15 @@ See [Conventional Commits](Https://conventionalcommits.org) for commit guideline
 
 <!-- changelog -->
 
+## v0.4.2 (2026-03-26)
+
+
+
+
+### Bug Fixes:
+
+* enable priv directory by andyl
+
 ## v0.4.1 (2026-03-26)
 
 

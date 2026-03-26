@@ -19,7 +19,7 @@ dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:commit_hook, "~> 0.4.1"}
+    {:commit_hook, "~> 0.4.2"}
   ]
 end
 ```
