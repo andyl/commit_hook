@@ -16,12 +16,17 @@ defmodule Mix.Tasks.CommitHook.Enable do
   def run(_argv) do
     hooks_dir = Path.join([".git", "hooks"])
     disabled = Path.join(hooks_dir, "commit-msg.disable")
+    sample = Path.join(hooks_dir, "commit-msg.sample")
     target = Path.join(hooks_dir, "commit-msg")
+    source = Path.join(:code.priv_dir(:commit_hook), "commit-msg")
+
+    if File.exists?(sample) do
+      File.rm!(sample)
+    end
 
     if File.exists?(disabled) do
       File.rename!(disabled, target)
     else
-      source = Path.join(:code.priv_dir(:commit_hook), "commit-msg")
       File.cp!(source, target)
       File.chmod!(target, 0o755)
     end
