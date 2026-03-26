@@ -18,7 +18,7 @@ defmodule CommitHook.MixProject do
         "GitHub" => "https://github.com/andyl/commit_hook",
         "Docs" => "https://hexdocs.pm/commit_hook"
       },
-      files: ~w(lib mix.exs README.md CHANGELOG.md LICENSE)
+      files: ~w(lib priv mix.exs README.md CHANGELOG.md LICENSE)
     ],
 
       deps: deps()

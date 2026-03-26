@@ -26,11 +26,13 @@ defmodule Mix.Tasks.CommitHook.Enable do
 
     if File.exists?(disabled) do
       File.rename!(disabled, target)
+      Mix.shell().info("Disabled hook restored.")
     else
       File.cp!(source, target)
       File.chmod!(target, 0o755)
+      Mix.shell().info("New hook created.")
     end
 
-    Mix.shell().info("Commit hook enabled.")
+    Mix.shell().info("Hook enabled.")
   end
 end
