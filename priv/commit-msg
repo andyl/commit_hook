@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+# .git/hooks/commit-msg
+# Lints commit messages to enforce Conventional Commits format
+# (you can customize the regex or replace with commitlint, etc.)
+
+COMMIT_MSG_FILE="$1"
+
+# Skip empty messages or merge/revert commits (Git handles those)
+if [[ -z "$(cat "$COMMIT_MSG_FILE")" ]]; then
+    echo "Commit message cannot be empty."
+    exit 1
+fi
+
+# Basic Conventional Commits regex:
+# type[(scope)]: description
+# Allowed types: feat, fix, chore, docs, test, style, refactor, perf, build, ci, revert
+if ! head -n1 "$COMMIT_MSG_FILE" | grep -qE '^(feat|fix|chore|docs|test|style|refactor|perf|build|ci|revert)(\\([a-z0-9-]+\\))?!?: .+'; then
+    echo "Invalid commit message format."
+    echo "   Use Conventional Commits: <type>[optional scope]: <description>"
+    echo "   Valid types: feat, fix, chore, docs, test, style, refactor, perf, build, ci, revert"
+    echo "   Example: feat(api): add user authentication"
+    echo "   Full spec: https://www.conventionalcommits.org"
+    exit 1
+fi
+
+# Optional: enforce reasonable length
+if [[ $(head -n1 "$COMMIT_MSG_FILE" | wc -c) -gt 100 ]]; then
+    echo "Commit message subject is too long (max 100 chars recommended)."
+    exit 1
+fi
+
+echo "Commit message looks good!"
+exit 0
