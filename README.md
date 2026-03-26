@@ -24,7 +24,7 @@ def deps do
 end
 ```
 
-After running `mix deps.get`, you should run `mix commit_hook.install`.
+After running `mix deps.get`, you should run `mix commit_hook.enable`.
 
 ### Installing with Igniter 
 
