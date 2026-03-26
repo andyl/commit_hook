@@ -5,6 +5,15 @@ See [Conventional Commits](Https://conventionalcommits.org) for commit guideline
 
 <!-- changelog -->
 
+## v0.2.0 (2026-03-26)
+
+
+
+
+### Features:
+
+* generate documentation by andyl
+
 ## v0.1.0 (2026-03-26)
 
 
