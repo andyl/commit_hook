@@ -12,15 +12,14 @@ defmodule CommitHook.MixProject do
       description: "Enable/Disable Conventional Commit checks",
       docs: docs(),
       package: [
-      name: "commit_hook",
-      licenses: ["MIT"],
-      links: %{
-        "GitHub" => "https://github.com/andyl/commit_hook",
-        "Docs" => "https://hexdocs.pm/commit_hook"
-      },
-      files: ~w(lib priv mix.exs README.md CHANGELOG.md LICENSE)
-    ],
-
+        name: "commit_hook",
+        licenses: ["MIT"],
+        links: %{
+          "GitHub" => "https://github.com/andyl/commit_hook",
+          "Docs" => "https://hexdocs.pm/commit_hook"
+        },
+        files: ~w(lib priv mix.exs README.md CHANGELOG.md LICENSE)
+      ],
       deps: deps()
     ]
   end
