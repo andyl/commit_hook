@@ -5,6 +5,17 @@ See [Conventional Commits](Https://conventionalcommits.org) for commit guideline
 
 <!-- changelog -->
 
+## v0.5.0 (2026-03-28)
+
+
+
+
+### Features:
+
+* add igniter install task by andyl
+
+* add INFO task by andyl
+
 ## v0.4.2 (2026-03-26)
 
 
