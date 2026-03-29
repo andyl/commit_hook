@@ -5,6 +5,15 @@ See [Conventional Commits](Https://conventionalcommits.org) for commit guideline
 
 <!-- changelog -->
 
+## v0.5.1 (2026-03-29)
+
+
+
+
+### Bug Fixes:
+
+* remove igniter.install files by andyl
+
 ## v0.5.0 (2026-03-28)
 
 
