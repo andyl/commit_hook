@@ -14,7 +14,7 @@ defmodule Mix.Tasks.CommitHook.Info do
   @moduledoc """
   Show valid fields for a Conventional Commit message.
 
-  ```
+  ```text
   #{@info_message}
   ```
   """
