@@ -5,6 +5,15 @@ See [Conventional Commits](Https://conventionalcommits.org) for commit guideline
 
 <!-- changelog -->
 
+## v0.5.4 (2026-03-29)
+
+
+
+
+### Bug Fixes:
+
+* change block to text format by andyl
+
 ## v0.5.3 (2026-03-29)
 
 

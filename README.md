@@ -20,7 +20,7 @@ developers who clone your repo to use the CommitHook.
 ```elixir
 def deps do
   [
-    {:commit_hook, "~> 0.5.3"}
+    {:commit_hook, "~> 0.5.4"}
   ]
 end
 ```
