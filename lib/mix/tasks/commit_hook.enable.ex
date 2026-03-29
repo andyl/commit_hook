@@ -14,6 +14,11 @@ defmodule Mix.Tasks.CommitHook.Enable do
 
   @impl Mix.Task
   def run(_argv) do
+    unless File.dir?(".git") do
+      Mix.shell().error("Not a Git repository (.git directory not found).")
+      exit({:shutdown, 1})
+    end
+
     hooks_dir = Path.join([".git", "hooks"])
     disabled = Path.join(hooks_dir, "commit-msg.disable")
     sample = Path.join(hooks_dir, "commit-msg.sample")

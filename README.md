@@ -13,8 +13,9 @@ with tools like [GitOps](https://github.com/zachdaniel/git_ops).
 
 ### Manual Installation 
 
-The package can be installed by adding `commit_hook` to your list of
-dependencies in `mix.exs`:
+The package can be installed in your project by adding `commit_hook` to your
+list of dependencies in `mix.exs`.  This is useful if you would like the
+developers who clone your repo to use the CommitHook.
 
 ```elixir
 def deps do
@@ -26,19 +27,18 @@ end
 
 After running `mix deps.get`, you should run `mix commit_hook.enable`.
 
-### Installing with Igniter 
+### Installing the Archive 
 
-This command will install the dependency and auto-enable the commit hook:
+You can also install CommitHook globally as an Elixir Archive:
 
-`mix igniter.install commit_hook`
+`mix archive.install hex commit_hook`
 
 ## Usage 
 
-Once installed, you can enable/disable the commit hook:
-
 ```
-> mix commit_hook.enable 
-> mix commit_hook.disable
+> mix commit_hook.enable    # enable the commit hook 
+> mix commit_hook.disable   # disable the commit hook 
+> mix commit_hook.info      # show valid CC fields
 ```
 
 ## Cloning Your Repo 
