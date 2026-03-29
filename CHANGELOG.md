@@ -5,6 +5,15 @@ See [Conventional Commits](Https://conventionalcommits.org) for commit guideline
 
 <!-- changelog -->
 
+## v0.5.2 (2026-03-29)
+
+
+
+
+### Bug Fixes:
+
+* add check for .git directory by andyl
+
 ## v0.5.1 (2026-03-29)
 
 
